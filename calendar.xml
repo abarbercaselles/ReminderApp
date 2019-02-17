@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/BlackClar"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalendarActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="44dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#FFF" />
+
+    <TextView
+        android:id="@+id/mydate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pick up a Date"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="23dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:numbersSelectorColor="@color/BlackClar"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:background="@color/Silver"
+        android:layout_gravity="center" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/buttonDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_rounded"
+        android:gravity="center"
+        android:text="SAVE CHANGES"
+        android:textColor="@color/BlackClar" />
+
+
+</LinearLayout>

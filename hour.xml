@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BlackClar"
+    android:padding="10dp"
+    tools:context=".HourActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:background="@color/BlackClar"
+            android:textColorPrimary="@color/Silver"
+            android:numbersSelectorColor="@color/BlackClar"
+            android:amPmBackgroundColor="@color/BlackClar"
+            android:amPmTextColor="@color/BlackClar"
+            android:headerBackground="@color/BlackClar"
+            android:numbersTextColor="@color/White"
+            android:numbersBackgroundColor="@color/Silver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/buttonAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_rounded"
+            android:textColor="@color/BlackClar"
+            android:text="SAVE CHANGES" />
+
+    </LinearLayout>
+
+</RelativeLayout>

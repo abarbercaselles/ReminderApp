@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BlackClar"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/text"
+            android:textColor="@color/White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder: "
+             />
+
+        <EditText
+            android:id="@+id/textedit"
+            android:layout_width="180dp"
+            android:backgroundTint="@color/White"
+            android:textColor="@color/White"
+            android:textColorLink="@color/White"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+
+        android:id="@+id/save"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/btn_rounded"
+        android:textColor="@color/BlackClar"
+        android:text="SAVE"/>
+
+    <ListView
+        android:id="@+id/listview1"
+        android:background="@color/BlackClar"
+        android:divider="@color/White"
+        android:dividerHeight="4px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp" />
+
+</RelativeLayout>
