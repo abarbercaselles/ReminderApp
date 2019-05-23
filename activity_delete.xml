@@ -19,15 +19,26 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:padding="10dp"
-
         android:layout_centerHorizontal="true"
         android:layout_marginTop="440dp"
         android:background="@drawable/btn_rounded"
         android:text="DELETE REMINDER"
         android:textColor="@color/BlackClar" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="170dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/btn_white"
+        android:text="EDIT REMINDER"
+        android:textColor="@color/White"/>
 
 
 </RelativeLayout>

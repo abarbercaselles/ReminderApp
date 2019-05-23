@@ -2,10 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/BlackClar"
-    tools:context=".SettingsActivity">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/BlackClar">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +17,7 @@
             android:textColor="@color/White"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reminder: "
+            android:text="  Reminder: "
              />
 
         <EditText
@@ -30,21 +29,10 @@
             android:layout_height="wrap_content"
             />
 
+
+
+
     </LinearLayout>
-
-
-    <Button
-
-        android:id="@+id/save"
-        android:padding="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="27dp"
-        android:background="@drawable/btn_rounded"
-        android:textColor="@color/BlackClar"
-        android:text="SAVE"/>
 
     <ListView
         android:id="@+id/listview1"
@@ -52,10 +40,32 @@
         android:divider="@color/White"
         android:dividerHeight="4px"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="600dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="440dp"
+        android:background="@drawable/btn_rounded"
+        android:text="SAVE"
+        android:textColor="@color/BlackClar" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="385dp"
+        android:background="@drawable/btn_white"
+        android:text="BACK"
+        android:textColor="@color/White"/>
 
 </RelativeLayout>

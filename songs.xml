@@ -20,7 +20,7 @@
             android:id="@+id/radio_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Once"
+            android:text="Wisdom"
             android:checked="true"
             android:textColor="@color/White"
             android:buttonTint="@color/White"/>
@@ -29,23 +29,17 @@
             android:id="@+id/radio_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hourly"
+            android:text="Rythym"
             android:textColor="@color/White"
             android:buttonTint="@color/White"/>
 
-        <RadioButton
-            android:id="@+id/radio_three"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Daily"
-            android:textColor="@color/White"
-            android:buttonTint="@color/White"/>
+
 
         <RadioButton
             android:id="@+id/radio_four"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Weekly"
+            android:text="Classic"
             android:textColor="@color/White"
             android:buttonTint="@color/White"/>
 
@@ -53,25 +47,46 @@
             android:id="@+id/radio_five"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Monthly"
+            android:text="Mexico"
             android:textColor="@color/White"
             android:buttonTint="@color/White"/>
 
+        <RadioButton
+            android:id="@+id/radio_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Happy"
+            android:textColor="@color/White"
+            android:buttonTint="@color/White"/>
+
+
     </RadioGroup>
 
+    <Button
+        android:id="@+id/button_play"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="410dp"
+        android:layout_marginBottom="135dp"
+        android:background="@drawable/btn_white"
+        android:text="PLAY"
+        android:textColor="@color/White" />
 
     <Button
-        android:id="@+id/button_apply"
-        android:layout_width="wrap_content"
-        android:padding="10dp"
+        android:id="@+id/button_save"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/radioGroup"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="85dp"
         android:background="@drawable/btn_rounded"
+        android:padding="10dp"
         android:text="SAVE CHANGES"
         android:textColor="@color/BlackClar" />
+
+
+
 
 </RelativeLayout>
