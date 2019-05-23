@@ -1,4 +1,4 @@
-package estudios.com.myapplication;
+package barber.studios.reminderapp;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -17,7 +17,6 @@ public class CalendarActivity extends AppCompatActivity {
     public Button buttondate;
     int yearfinal,monthfinal,dayfinal;
     TextView mydate;
-   // FloatingActionButton fab;
     int dayOfMonth,month,year;
 
     @Override

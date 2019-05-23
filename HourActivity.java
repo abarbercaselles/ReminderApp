@@ -1,4 +1,4 @@
-package estudios.com.myapplication;
+package barber.studios.reminderapp;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;

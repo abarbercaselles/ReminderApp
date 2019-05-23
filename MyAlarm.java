@@ -1,5 +1,6 @@
-package estudios.com.myapplication;
+package barber.studios.reminderapp;
 
+import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -7,6 +8,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.BitmapFactory;
 import android.media.MediaPlayer;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
@@ -18,7 +20,8 @@ import android.support.v4.app.NotificationManagerCompat;
 import android.util.Log;
 import android.widget.Toast;
 
-import static estudios.com.myapplication.Notification.CHANNEL_1_ID;
+import static barber.studios.reminderapp.Notification.CHANNEL_1_ID;
+
 
 
 /**
@@ -29,7 +32,7 @@ import static estudios.com.myapplication.Notification.CHANNEL_1_ID;
 public class MyAlarm extends BroadcastReceiver {
 
     public int code,code1;
-    public String reminder;
+    public String reminder,songfinal;
     public DatabaseHelper myDb;
     private NotificationManagerCompat notificationManager;
 
@@ -41,15 +44,18 @@ public class MyAlarm extends BroadcastReceiver {
         notificationManager = NotificationManagerCompat.from(context);
 
         code = intent.getIntExtra("id",0);
+        songfinal = intent.getStringExtra("songfinal");
+
+
+        //Intent activityIntent = new Intent(context, MainActivity.class);
+        //PendingIntent contentIntent = PendingIntent.getBroadcast(context,
+               // code, activityIntent, 0);
 
         Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(500);
         // showNotification(context);
-
-
        // PendingIntent contentIntent = PendingIntent.getBroadcast(context, code,
                // intent, 0);
-
 
         Cursor res = myDb.getAllData(code);
         if (res.getCount() == 0) {
@@ -66,13 +72,17 @@ public class MyAlarm extends BroadcastReceiver {
                     .setSmallIcon(R.drawable.ic_launcher)
                     .setContentTitle("Do not forget !")
                     .setContentText(reminder)
-                    //.setContentIntent(MainActivity)
+                    //.addAction(R.drawable.ic_launcher, "Dismiss", contentIntent)
+                    //.setContentIntent(contentIntent)
                     .setPriority(NotificationCompat.PRIORITY_HIGH)
                     .setCategory(NotificationCompat.CATEGORY_MESSAGE)
                     .build();
 
-            notificationManager.notify(1, notification);
+            notificationManager.notify(code, notification);
 
+       Intent close = new Intent(context, CloseActivity.class);
+       close.putExtra("songfinal", songfinal);
+       context.startActivity(close);
 
 
     }

@@ -1,4 +1,4 @@
-package estudios.com.myapplication;
+package barber.studios.reminderapp;
 
 import android.content.Intent;
 import android.os.Handler;
